@@ -5,12 +5,13 @@ class TasksController < ApplicationController
   # GET /tasks
   # GET /tasks.json
   def index
-    @tasks = Task.all
+    @tasks = Task.order("checkbox").order("enddate")
   end
 
   # GET /tasks/1
   # GET /tasks/1.json
   def show
+
   end
 
   # GET /tasks/new
