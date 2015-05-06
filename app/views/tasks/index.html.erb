@@ -1,5 +1,6 @@
 <h1>Listing tasks</h1>
 
+   <% if user_signed_in? %>
 <table>
   <thead>
     <tr>
@@ -14,7 +15,7 @@
     </tr>
   </thead>
 
-   <% if user_signed_in? %>
+
 
   <tbody>
     <% @tasks.each do |task| %>
